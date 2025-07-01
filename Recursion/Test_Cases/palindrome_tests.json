@@ -1,0 +1,26 @@
+[
+    {
+        "description": "Example Test Case 1: True",
+        "input": [
+            "MADAM"
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Example Test Case 2: True",
+        "input": [
+            "DAD"
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Example Test Case 1: False",
+        "input": [
+            "PALINDROME"
+        ],
+        "expected": false,
+        "actual": false
+    }
+]

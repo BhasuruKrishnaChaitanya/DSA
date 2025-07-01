@@ -1,0 +1,22 @@
+[
+    {
+        "description": "Example Test Case 1: Single list input",
+        "input": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        ],
+        "expected": [
+            5,
+            4,
+            3,
+            2,
+            1
+        ],
+        "actual": null
+    }
+]

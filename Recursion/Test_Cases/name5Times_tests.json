@@ -1,0 +1,23 @@
+[
+    {
+        "description": "Test Case 1: Return Krishna 5 times",
+        "input": [
+            "Krishna",
+            0
+        ],
+        "expected": [
+            "Krishna",
+            "Krishna",
+            "Krishna",
+            "Krishna",
+            "Krishna"
+        ],
+        "actual": [
+            "Krishna",
+            "Krishna",
+            "Krishna",
+            "Krishna",
+            "Krishna"
+        ]
+    }
+]

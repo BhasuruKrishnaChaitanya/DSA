@@ -1,0 +1,22 @@
+[
+    {
+        "description": "Test Case 1: Return n to 1",
+        "input": [
+            5
+        ],
+        "expected": [
+            5,
+            4,
+            3,
+            2,
+            1
+        ],
+        "actual": [
+            5,
+            4,
+            3,
+            2,
+            1
+        ]
+    }
+]

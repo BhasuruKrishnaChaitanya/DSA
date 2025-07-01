@@ -1,0 +1,34 @@
+[
+    {
+        "description": "Example Test Case 1: 5th Fibonacci element is 5",
+        "input": [
+            5
+        ],
+        "expected": 5,
+        "actual": 5
+    },
+    {
+        "description": "Example Test Case 1: 1st Fibonacci element is 1",
+        "input": [
+            1
+        ],
+        "expected": 1,
+        "actual": 1
+    },
+    {
+        "description": "Example Test Case 1: 8th Fibonacci element is 21",
+        "input": [
+            8
+        ],
+        "expected": 21,
+        "actual": 21
+    },
+    {
+        "description": "Example Test Case 1: 2nd Fibonacci element is 1",
+        "input": [
+            2
+        ],
+        "expected": 1,
+        "actual": 1
+    }
+]
