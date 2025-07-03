@@ -1,0 +1,199 @@
+[
+    {
+        "description": "Target is present and is the first occurrence of a duplicate",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                5,
+                5,
+                8,
+                9
+            ],
+            5
+        ],
+        "expected": 2,
+        "actual": 2
+    },
+    {
+        "description": "Target is not present, should return index of next greater element",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11
+            ],
+            6
+        ],
+        "expected": 3,
+        "actual": 3
+    },
+    {
+        "description": "Target is the first element in the array",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            10
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Target is smaller than all elements in the array",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            5
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Target is the last element in the array",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            50
+        ],
+        "expected": 4,
+        "actual": 4
+    },
+    {
+        "description": "Target is larger than all elements, should return insertion point at the end",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            60
+        ],
+        "expected": 5,
+        "actual": 5
+    },
+    {
+        "description": "Edge Case: The array is empty",
+        "input": [
+            [],
+            5
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is smaller",
+        "input": [
+            [
+                10
+            ],
+            5
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is equal",
+        "input": [
+            [
+                10
+            ],
+            10
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is larger",
+        "input": [
+            [
+                10
+            ],
+            15
+        ],
+        "expected": 1,
+        "actual": 1
+    },
+    {
+        "description": "Array with all duplicate elements, target is one of them",
+        "input": [
+            [
+                7,
+                7,
+                7,
+                7,
+                7
+            ],
+            7
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Array with all duplicate elements, target is not one of them",
+        "input": [
+            [
+                7,
+                7,
+                7,
+                7,
+                7
+            ],
+            8
+        ],
+        "expected": 5,
+        "actual": 5
+    },
+    {
+        "description": "Array contains negative numbers, target is present",
+        "input": [
+            [
+                -8,
+                -4,
+                0,
+                1,
+                3,
+                5
+            ],
+            -4
+        ],
+        "expected": 1,
+        "actual": 1
+    },
+    {
+        "description": "Array contains negative numbers, target is not present",
+        "input": [
+            [
+                -8,
+                -4,
+                0,
+                1,
+                3,
+                5
+            ],
+            -5
+        ],
+        "expected": 1,
+        "actual": 1
+    }
+]

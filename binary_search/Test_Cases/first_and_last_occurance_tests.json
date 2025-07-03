@@ -1,0 +1,223 @@
+[
+    {
+        "description": "Target is present multiple times in the middle",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                5,
+                5,
+                8,
+                9
+            ],
+            5
+        ],
+        "expected": [
+            2,
+            4
+        ],
+        "actual": [
+            2,
+            4
+        ]
+    },
+    {
+        "description": "Target is not present",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11
+            ],
+            6
+        ],
+        "expected": [
+            -1,
+            -1
+        ],
+        "actual": [
+            -1,
+            -1
+        ]
+    },
+    {
+        "description": "Target is present only once",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            30
+        ],
+        "expected": [
+            2,
+            2
+        ],
+        "actual": [
+            2,
+            2
+        ]
+    },
+    {
+        "description": "Target is the first element and has duplicates",
+        "input": [
+            [
+                2,
+                2,
+                5,
+                7,
+                9
+            ],
+            2
+        ],
+        "expected": [
+            0,
+            1
+        ],
+        "actual": [
+            0,
+            1
+        ]
+    },
+    {
+        "description": "Target is the last element and has duplicates",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                9,
+                9,
+                9
+            ],
+            9
+        ],
+        "expected": [
+            3,
+            5
+        ],
+        "actual": [
+            3,
+            5
+        ]
+    },
+    {
+        "description": "Target is smaller than all elements",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            5
+        ],
+        "expected": [
+            -1,
+            -1
+        ],
+        "actual": [
+            -1,
+            -1
+        ]
+    },
+    {
+        "description": "Target is larger than all elements",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            60
+        ],
+        "expected": [
+            -1,
+            -1
+        ],
+        "actual": [
+            -1,
+            -1
+        ]
+    },
+    {
+        "description": "Edge Case: The array is empty",
+        "input": [
+            [],
+            5
+        ],
+        "expected": [
+            -1,
+            -1
+        ],
+        "actual": [
+            -1,
+            -1
+        ]
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is present",
+        "input": [
+            [
+                7
+            ],
+            7
+        ],
+        "expected": [
+            0,
+            0
+        ],
+        "actual": [
+            0,
+            0
+        ]
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is not present",
+        "input": [
+            [
+                7
+            ],
+            1
+        ],
+        "expected": [
+            -1,
+            -1
+        ],
+        "actual": [
+            -1,
+            -1
+        ]
+    },
+    {
+        "description": "Array with all elements being the target",
+        "input": [
+            [
+                7,
+                7,
+                7,
+                7,
+                7
+            ],
+            7
+        ],
+        "expected": [
+            0,
+            4
+        ],
+        "actual": [
+            0,
+            4
+        ]
+    }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "description": "Target is in the middle of an odd-length array",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                7,
+                9
+            ],
+            5
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Target is at the beginning of an odd-length array",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                7,
+                9
+            ],
+            1
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Target is at the end of an odd-length array",
+        "input": [
+            [
+                1,
+                3,
+                5,
+                7,
+                9
+            ],
+            9
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Target is present in an even-length array",
+        "input": [
+            [
+                2,
+                4,
+                6,
+                8,
+                10,
+                12
+            ],
+            6
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Target is smaller than all elements in the array",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            5
+        ],
+        "expected": false,
+        "actual": false
+    },
+    {
+        "description": "Target is larger than all elements in the array",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            60
+        ],
+        "expected": false,
+        "actual": false
+    },
+    {
+        "description": "Target is not present, but falls between two elements",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            25
+        ],
+        "expected": false,
+        "actual": false
+    },
+    {
+        "description": "Edge Case: The array is empty",
+        "input": [
+            [],
+            5
+        ],
+        "expected": false,
+        "actual": false
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is present",
+        "input": [
+            [
+                7
+            ],
+            7
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is not present",
+        "input": [
+            [
+                7
+            ],
+            1
+        ],
+        "expected": false,
+        "actual": false
+    },
+    {
+        "description": "Array with duplicate values, target is one of the duplicates",
+        "input": [
+            [
+                1,
+                2,
+                2,
+                2,
+                3,
+                4,
+                5
+            ],
+            2
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Array contains negative numbers and zero, target is present",
+        "input": [
+            [
+                -8,
+                -4,
+                0,
+                1,
+                3,
+                5
+            ],
+            0
+        ],
+        "expected": true,
+        "actual": true
+    },
+    {
+        "description": "Array contains negative numbers, target is not present",
+        "input": [
+            [
+                -8,
+                -4,
+                0,
+                1,
+                3,
+                5
+            ],
+            -5
+        ],
+        "expected": false,
+        "actual": false
+    }
+]

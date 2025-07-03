@@ -1,0 +1,188 @@
+[
+    {
+        "description": "Standard case: Target is in the left sorted portion",
+        "input": [
+            [
+                4,
+                5,
+                6,
+                7,
+                0,
+                1,
+                2
+            ],
+            5
+        ],
+        "expected": 1,
+        "actual": 1
+    },
+    {
+        "description": "Standard case: Target is in the right sorted portion",
+        "input": [
+            [
+                4,
+                5,
+                6,
+                7,
+                0,
+                1,
+                2
+            ],
+            1
+        ],
+        "expected": 5,
+        "actual": 5
+    },
+    {
+        "description": "Target is the pivot element (the smallest value)",
+        "input": [
+            [
+                4,
+                5,
+                6,
+                7,
+                0,
+                1,
+                2
+            ],
+            0
+        ],
+        "expected": 4,
+        "actual": 4
+    },
+    {
+        "description": "Target is not present in the array",
+        "input": [
+            [
+                4,
+                5,
+                6,
+                7,
+                0,
+                1,
+                2
+            ],
+            3
+        ],
+        "expected": -1,
+        "actual": -1
+    },
+    {
+        "description": "Target is the first element of the rotated array",
+        "input": [
+            [
+                5,
+                1,
+                3
+            ],
+            5
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Target is the last element of the rotated array",
+        "input": [
+            [
+                7,
+                8,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            6
+        ],
+        "expected": 7,
+        "actual": 7
+    },
+    {
+        "description": "No rotation (fully sorted array), target present",
+        "input": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            4
+        ],
+        "expected": 3,
+        "actual": 3
+    },
+    {
+        "description": "No rotation (fully sorted array), target not present",
+        "input": [
+            [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            0
+        ],
+        "expected": -1,
+        "actual": -1
+    },
+    {
+        "description": "Edge Case: Array with two elements, target is the first",
+        "input": [
+            [
+                3,
+                1
+            ],
+            3
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Edge Case: Array with two elements, target is the second",
+        "input": [
+            [
+                3,
+                1
+            ],
+            1
+        ],
+        "expected": 1,
+        "actual": 1
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is present",
+        "input": [
+            [
+                1
+            ],
+            1
+        ],
+        "expected": 0,
+        "actual": 0
+    },
+    {
+        "description": "Edge Case: Array with a single element, target is not present",
+        "input": [
+            [
+                1
+            ],
+            0
+        ],
+        "expected": -1,
+        "actual": -1
+    },
+    {
+        "description": "Edge Case: Empty array",
+        "input": [
+            [],
+            5
+        ],
+        "expected": -1,
+        "actual": -1
+    }
+]
