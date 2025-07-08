@@ -1,0 +1,194 @@
+[
+    {
+        "description": "Test insert and delete by index (deletek)",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40
+            ],
+            [
+                [
+                    "insert",
+                    50
+                ],
+                [
+                    "deletek",
+                    0
+                ],
+                [
+                    "deletek",
+                    2
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "20, 30, 50",
+            "final_length": 3,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "20, 30, 50",
+            "final_length": 3,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test delete by value (deleteT)",
+        "input": [
+            [
+                5,
+                15,
+                25,
+                35
+            ],
+            [
+                [
+                    "deleteT",
+                    5
+                ],
+                [
+                    "deleteT",
+                    25
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "15, 35",
+            "final_length": 2,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "15, 35",
+            "final_length": 2,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test update and find operations",
+        "input": [
+            [
+                "apple",
+                "banana",
+                "cherry",
+                "apple"
+            ],
+            [
+                [
+                    "update",
+                    "apple",
+                    "avocado"
+                ],
+                [
+                    "find",
+                    "banana"
+                ],
+                [
+                    "find",
+                    "apple"
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "avocado, banana, cherry, avocado",
+            "final_length": 4,
+            "operation_results": [
+                true,
+                false
+            ]
+        },
+        "actual": {
+            "final_list": "avocado, banana, cherry, avocado",
+            "final_length": 4,
+            "operation_results": [
+                true,
+                false
+            ]
+        }
+    },
+    {
+        "description": "Test complex sequence with edge cases",
+        "input": [
+            [
+                1,
+                2,
+                3
+            ],
+            [
+                [
+                    "deleteT",
+                    99
+                ],
+                [
+                    "deletek",
+                    0
+                ],
+                [
+                    "deletek",
+                    1
+                ],
+                [
+                    "deletek",
+                    0
+                ],
+                [
+                    "find",
+                    1
+                ],
+                [
+                    "insert",
+                    100
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "100",
+            "final_length": 1,
+            "operation_results": [
+                false
+            ]
+        },
+        "actual": {
+            "final_list": "100",
+            "final_length": 1,
+            "operation_results": [
+                false
+            ]
+        }
+    },
+    {
+        "description": "Test on an initially empty list",
+        "input": [
+            [],
+            [
+                [
+                    "insert",
+                    10
+                ],
+                [
+                    "insert",
+                    20
+                ],
+                [
+                    "find",
+                    10
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "10, 20",
+            "final_length": 2,
+            "operation_results": [
+                true
+            ]
+        },
+        "actual": {
+            "final_list": "10, 20",
+            "final_length": 2,
+            "operation_results": [
+                true
+            ]
+        }
+    }
+]
