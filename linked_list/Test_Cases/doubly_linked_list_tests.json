@@ -1,0 +1,273 @@
+[
+    {
+        "description": "Test reversing a standard list",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40
+            ],
+            [
+                [
+                    "reverse"
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "40, 30, 20, 10",
+            "final_list_reverse": "10, 20, 30, 40",
+            "final_length": 4,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "40, 30, 20, 10",
+            "final_list_reverse": "10, 20, 30, 40",
+            "final_length": 4,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test reversing a list, then inserting a new node",
+        "input": [
+            [
+                "a",
+                "b",
+                "c"
+            ],
+            [
+                [
+                    "reverse"
+                ],
+                [
+                    "insert",
+                    "d"
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "c, b, a, d",
+            "final_list_reverse": "d, a, b, c",
+            "final_length": 4,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "c, b, a, d",
+            "final_list_reverse": "d, a, b, c",
+            "final_length": 4,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Edge Case: Reversing a list with two elements",
+        "input": [
+            [
+                1,
+                2
+            ],
+            [
+                [
+                    "reverse"
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "2, 1",
+            "final_list_reverse": "1, 2",
+            "final_length": 2,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "2, 1",
+            "final_list_reverse": "1, 2",
+            "final_length": 2,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Edge Case: Reversing a list with one element (should not change)",
+        "input": [
+            [
+                100
+            ],
+            [
+                [
+                    "reverse"
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "100",
+            "final_list_reverse": "100",
+            "final_length": 1,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "100",
+            "final_list_reverse": "100",
+            "final_length": 1,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test insert and reverse display",
+        "input": [
+            [
+                10,
+                20,
+                30
+            ],
+            [
+                [
+                    "insert",
+                    40
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "10, 20, 30, 40",
+            "final_list_reverse": "40, 30, 20, 10",
+            "final_length": 4,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "10, 20, 30, 40",
+            "final_list_reverse": "40, 30, 20, 10",
+            "final_length": 4,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test deleting a middle node by index (deletek)",
+        "input": [
+            [
+                10,
+                20,
+                30,
+                40,
+                50
+            ],
+            [
+                [
+                    "deletek",
+                    2
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "10, 20, 40, 50",
+            "final_list_reverse": "50, 40, 20, 10",
+            "final_length": 4,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "10, 20, 40, 50",
+            "final_list_reverse": "50, 40, 20, 10",
+            "final_length": 4,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test deleting the head node by value (deleteT)",
+        "input": [
+            [
+                5,
+                15,
+                25
+            ],
+            [
+                [
+                    "deleteT",
+                    5
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "15, 25",
+            "final_list_reverse": "25, 15",
+            "final_length": 2,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "15, 25",
+            "final_list_reverse": "25, 15",
+            "final_length": 2,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test deleting the tail node by index (deletek)",
+        "input": [
+            [
+                "a",
+                "b",
+                "c",
+                "d"
+            ],
+            [
+                [
+                    "deletek",
+                    3
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "a, b, c",
+            "final_list_reverse": "c, b, a",
+            "final_length": 3,
+            "operation_results": []
+        },
+        "actual": {
+            "final_list": "a, b, c",
+            "final_list_reverse": "c, b, a",
+            "final_length": 3,
+            "operation_results": []
+        }
+    },
+    {
+        "description": "Test complex sequence and find operation",
+        "input": [
+            [
+                1,
+                2,
+                3
+            ],
+            [
+                [
+                    "deleteT",
+                    2
+                ],
+                [
+                    "insert",
+                    4
+                ],
+                [
+                    "find",
+                    3
+                ],
+                [
+                    "find",
+                    99
+                ]
+            ]
+        ],
+        "expected": {
+            "final_list": "1, 3, 4",
+            "final_list_reverse": "4, 3, 1",
+            "final_length": 3,
+            "operation_results": [
+                true,
+                false
+            ]
+        },
+        "actual": {
+            "final_list": "1, 3, 4",
+            "final_list_reverse": "4, 3, 1",
+            "final_length": 3,
+            "operation_results": [
+                true,
+                false
+            ]
+        }
+    }
+]

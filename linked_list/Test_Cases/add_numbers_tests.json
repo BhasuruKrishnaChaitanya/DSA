@@ -1,0 +1,86 @@
+[
+    {
+        "description": "Standard case: 342 + 465 = 807",
+        "input": [
+            [
+                2,
+                4,
+                3
+            ],
+            [
+                5,
+                6,
+                4
+            ]
+        ],
+        "expected": "7, 0, 8",
+        "actual": "7, 0, 8"
+    },
+    {
+        "description": "Uneven length lists: 99 + 1 = 100",
+        "input": [
+            [
+                9,
+                9
+            ],
+            [
+                1
+            ]
+        ],
+        "expected": "0, 0, 1",
+        "actual": "0, 0, 1"
+    },
+    {
+        "description": "Result has more digits than inputs (carry at the end)",
+        "input": [
+            [
+                9,
+                9,
+                9,
+                9
+            ],
+            [
+                9,
+                9,
+                9
+            ]
+        ],
+        "expected": "8, 9, 9, 0, 1",
+        "actual": "8, 9, 9, 0, 1"
+    },
+    {
+        "description": "Adding a list to an empty list",
+        "input": [
+            [
+                1,
+                2,
+                3
+            ],
+            []
+        ],
+        "expected": "1, 2, 3",
+        "actual": "1, 2, 3"
+    },
+    {
+        "description": "Adding two zeros",
+        "input": [
+            [
+                0
+            ],
+            [
+                0
+            ]
+        ],
+        "expected": "0",
+        "actual": "0"
+    },
+    {
+        "description": "Edge Case: Adding two empty lists",
+        "input": [
+            [],
+            []
+        ],
+        "expected": "",
+        "actual": ""
+    }
+]
